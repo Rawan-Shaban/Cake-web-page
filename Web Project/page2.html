@@ -19,6 +19,33 @@ background-color: #ffc0cb;
         .navbar a:hover{
             background-color: rgba(157, 68, 105, 0.649);
         }
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 200px;
+            padding: 40px;
+        }
+        .class-card {
+            margin-top: 10px;
+            text-align: center;
+            display: inline;
+            width: 300px;
+            border-radius: 25px;
+        }
+        .buy-now {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 25px;
+        }
+        .quantity-options {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 10px;
+        }
     </style>
     </head>
     <body>
@@ -33,66 +60,157 @@ background-color: #ffc0cb;
                 <img src="cake/cake1.png" alt="Strawberry Birthday Cake" width="300"/>
                 <h3>Strawberry Birthday Cake</h3>
                 <p>Price:$120</p>
+                <div class ="quantity-options">
+                    <p>Choose quantity:</p>
+                    <label><input type="radio" name="quantity" value="1"> 1</label>
+                    <label><input type="radio" name="quantity" value="2"> 2</label>
+                    <label><input type="radio" name="quantity" value="3"> 3</label>
+                </div>
+                <button class="buy-now">Buy Now</button>
             </div>
             <div class="class-card">
                 <img src="cake/cake2.png" alt="Vanilla Large Cake" width="300"/>
                 <h3>Vanilla Large Cake</h3>
                 <p>Price:$200</p>
+                <div class ="quantity-options">
+                    <p>Choose quantity:</p>
+                    <label><input type="radio" name="quantity" value="1"> 1</label>
+                    <label><input type="radio" name="quantity" value="2"> 2</label>
+                    <label><input type="radio" name="quantity" value="3"> 3</label>
+                </div>
+                <button class="buy-now">Buy Now</button>
             </div>
             <div class="class-card">
                 <img src="cake/cake3.png" alt="Strawberry Nice Cake" width="300"/>
                 <h3>Strawberry Nice Cake</h3>
                 <p>Price:$100</p>
+                <div class ="quantity-options">
+                    <p>Choose quantity:</p>
+                    <label><input type="radio" name="quantity" value="1"> 1</label>
+                    <label><input type="radio" name="quantity" value="2"> 2</label>
+                    <label><input type="radio" name="quantity" value="3"> 3</label>
+                </div>
+                <button class="buy-now">Buy Now</button>
             </div>
             <div class="class-card">
                     <img src="cake/cake4.png" alt="Red Berry Heart Cake" width="300"/>
                     <h3>Red Berry Heart Cake</h3>
                     <p>Price:$150</p>
+                    <div class ="quantity-options">
+                        <p>Choose quantity:</p>
+                        <label><input type="radio" name="quantity" value="1"> 1</label>
+                        <label><input type="radio" name="quantity" value="2"> 2</label>
+                        <label><input type="radio" name="quantity" value="3"> 3</label>
+                    </div>
+                    <button class="buy-now">Buy Now</button>
             </div>
             <div class="class-card">
                 <img src="cake/cake5.png" alt="Chocolate Cake With Oreo Pieces" width="300"/>
                 <h3>Chocolate Cake With Oreo Pieces</h3>
                 <p>Price:$180</p>
+                <div class ="quantity-options">
+                    <p>Choose quantity:</p>
+                    <label><input type="radio" name="quantity" value="1"> 1</label>
+                    <label><input type="radio" name="quantity" value="2"> 2</label>
+                    <label><input type="radio" name="quantity" value="3"> 3</label>
+                </div>
+                <button class="buy-now">Buy Now</button>
             </div>
             <div class="class-card">
                 <img src="cake/cake6.png" alt="Graduation Cake" width="300"/>
                 <h3>Graduation Cake</h3>
                 <p>Price:$300</p>
+                <div class ="quantity-options">
+                    <p>Choose quantity:</p>
+                    <label><input type="radio" name="quantity" value="1"> 1</label>
+                    <label><input type="radio" name="quantity" value="2"> 2</label>
+                    <label><input type="radio" name="quantity" value="3"> 3</label>
+                </div>
+                <button class="buy-now">Buy Now</button>
             </div>
             <div class="class-card">
                 <img src="cake/cake7.png" alt="Pink Cake for Kids" width="300"/>
                 <h3>Pink Cake for Kids</h3>
                 <p>Price:$160</p>
+                <div class ="quantity-options">
+                    <p>Choose quantity:</p>
+                    <label><input type="radio" name="quantity" value="1"> 1</label>
+                    <label><input type="radio" name="quantity" value="2"> 2</label>
+                    <label><input type="radio" name="quantity" value="3"> 3</label>
+                </div>
+                <button class="buy-now">Buy Now</button>
             </div>
             <div class="class-card">
                 <img src="cake/cake8.png" alt="Imaginary Cake" width="300"/>
                 <h3>Imaginary Cake</h3>
                 <p>Price:$250</p>
+                <div class ="quantity-options">
+                    <p>Choose quantity:</p>
+                    <label><input type="radio" name="quantity" value="1"> 1</label>
+                    <label><input type="radio" name="quantity" value="2"> 2</label>
+                    <label><input type="radio" name="quantity" value="3"> 3</label>
+                </div>
+                <button class="buy-now">Buy Now</button>
             </div>
             <div class="class-card">
                 <img src="cake/cake9.png" alt="Velvet Cake Eith Vanilla" width="300"/>
                 <h3>Velvet Cake with Vanilla</h3>
                 <p>Price:$220</p>
+                <div class ="quantity-options">
+                    <p>Choose quantity:</p>
+                    <label><input type="radio" name="quantity" value="1"> 1</label>
+                    <label><input type="radio" name="quantity" value="2"> 2</label>
+                    <label><input type="radio" name="quantity" value="3"> 3</label>
+                </div>
+                <button class="buy-now">Buy Now</button>
             </div>
             <div class="class-card">
                 <img src="cake/cake10.png" alt="Simple Birthday Cake" width="300"/>
                 <h3>Simple Birthday Cake</h3>
                 <p>Price:$120</p>
+                <div class ="quantity-options">
+                    <p>Choose quantity:</p>
+                    <label><input type="radio" name="quantity" value="1"> 1</label>
+                    <label><input type="radio" name="quantity" value="2"> 2</label>
+                    <label><input type="radio" name="quantity" value="3"> 3</label>
+                </div>
+                <button class="buy-now">Buy Now</button>
             </div>
             <div class="class-card">
                 <img src="cake/cake11.png" alt="Golden Cake" width="300"/>
                 <h3>Golden Cake</h3>
                 <p>Price:$400</p>
+                <div class ="quantity-options">
+                    <p>Choose quantity:</p>
+                    <label><input type="radio" name="quantity" value="1"> 1</label>
+                    <label><input type="radio" name="quantity" value="2"> 2</label>
+                    <label><input type="radio" name="quantity" value="3"> 3</label>
+                </div>
+                <button class="buy-now">Buy Now</button>
             </div>
             <div class="class-card">
                 <img src="cake/cake12.png" alt="Moon View Cake" width="300"/>
                 <h3>Moon View Cake</h3>
                 <p>Price:$500</p>
+                <div class ="quantity-options">
+                    <p>Choose quantity:</p>
+                    <label><input type="radio" name="quantity" value="1"> 1</label>
+                    <label><input type="radio" name="quantity" value="2"> 2</label>
+                    <label><input type="radio" name="quantity" value="3"> 3</label>
+                </div>
+                <button class="buy-now">Buy Now</button>
             </div>
             <div class="class-card">
                 <img src="cake/cake13.png" alt="Small Birthday Cake" width="300"/>
                 <h3>Small Birthday Cake</h3>
                 <p>Price:$80</p>
+                <div class ="quantity-options">
+                    <p>Choose quantity:</p>
+                    <label><input type="radio" name="quantity" value="1"> 1</label>
+                    <label><input type="radio" name="quantity" value="2"> 2</label>
+                    <label><input type="radio" name="quantity" value="3"> 3</label>
+                </div>
+                <button class="buy-now">Buy Now</button>
             </div>
         </div>
     </body>
