@@ -3,6 +3,8 @@
       <title>about us</title>
       <style>
         body {
+            background-image: url(uscover.jpg);
+            background-size:cover;
 background-color: #ffc0cb;
         }
     .navbar{
@@ -23,11 +25,47 @@ background-color: #ffc0cb;
             background-color: rgb(255, 255, 255);
             width: 350px;
             border-radius: 3px;
-            font-size: 50px;
             font-weight: bold;
             color:rgb(120, 120, 120);
-             margin-top: 50px;
+            display:flex;
+            margin:10px;
         }
+        .aboutus{
+background-color:rgba(255, 255, 255, 0.082);
+border-radius: 10px;
+ width:fit-content;
+  color: rgb(0, 0, 0);
+        }
+        summary {
+    font-size: 20px;
+    cursor:pointer;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #ffffff4b;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+summary::before {
+    content: "▼";
+    margin-right: 10px;
+}
+details[open] summary::before {
+    transform: rotate(180deg);
+}
+
+.content {
+    padding: 15px;
+    border: 1px solid #00000053;
+    border-radius: 20px;
+    width: fit-content;
+    background-color: #ffffff29;
+    font-family:italic;
+    font-weight: bold;
+    font-size: 15px;
+    color:#000000;
+ }
     </style>
     </head>
     <body>
@@ -36,9 +74,58 @@ background-color: #ffc0cb;
            <a href="page2.html">products</a>
            <a href="page3.html">customize cake</a>
              <a href="page4.html"style="text-decoration: none;">about us</a>
-             <a href="page5.html">offers</a>
          </nav>
-         <header class="solgan">
-            <pre><img src="uscake.jpg" style="width: 50px; height: 500px;"> About Us</pre>
-    
-             </header>
+         <div class="solgan">
+            <pre><img src="uscake.jpg" style="width: 50px; height: 50px;"> <span style="color: grey; font-family: Arial; font-size: 50px;">About Us</span></pre>
+         </div>
+            <div class="aboutus">
+            <pre><h2>
+    This is a story written with <span style="color:rgb(255, 255, 255); -webkit-text-stroke: 0.2px #000000; font-size: 24px;">sugar & vanilla.</span>
+     It's like a <span style="color:rgb(197, 138, 98); font-size: 24px;">door🚪</span> opening for the first time, 
+  & the air's filled with the aroma of freshly baked <span style="color:antiquewhite; -webkit-text-stroke: 1px #0000002f; font-size: 24px;">cake🎂</span>, 
+        like a small promise of<span style="color:rgb(250, 255, 112); -webkit-text-stroke: 1px #0000002f; font-size: 24px;"> happiness</span>.</h2>
+    </pre>
+</div>
+<details>
+    <summary>Who built the site?</summary>
+    <div class="content">
+        <pre>
+1.Rawan Shaban Ahmed
+     email:<a href="mailto:rawanshaban@feng.bu.edu.eg">rawanshaban@feng.bu.edu.eg</a>
+     section:8  github:<a style="text-decoration:none;color:blueviolet" href="https://github.com/Rawan-Shaban">Rawan-Shaban</a>
+2.Rawan Ayman Seaf
+     email:<a href="mailto:rawanseaf@feng.bu.edu.eg">rawanseaf@feng.bu.edu.eg</a>
+     section:8  github:<a style="text-decoration:none;color:blueviolet" href="https://github.com/Rawan-66-Seaf">Rawan-66-Seaf</a>
+3.Habiba AbdElFattah Mahmoud
+        email:<a href="mailto:habibaabdelfattah@feng.bu.edu.eg">habibaabdelfattah@feng.bu.edu.eg</a>
+        section:7 github:<a style="text-decoration:none;color:blueviolet" href="https://github.com/habibaabdelfattah">habibaabdelfattah</a>
+        </pre>
+</details>
+<details>
+  <summary>When did we start?</summary>
+  <div class="content">
+    <pre>
+We began our sweet journey in 2026, with a simple dream: to turn cakes into moments of joy, love, and celebration.
+From the very first recipe, every layer has carried a story, and every flavor has been a promise of happiness.
+ </pre>
+  </div>
+</details>
+<details>
+    <summary>where can you find us?</summary>
+    <div class="content">
+        <pre>
+You can find us in the heart of Egypt, where every cake is baked with love and a touch of sweetness.
+ Our store is more than a place — it's a cozy corner where joy is served fresh, one slice at a time.
+        </pre>
+    </div>
+</details>
+<details>
+    <summary>How can I contact you?</summary>
+    <div class="content">
+        <pre>
+You can reach us at any time through our website or by calling our customer service line.
+ We're always here to help and make your cake experience delightful!
+        </pre>
+    </div>
+</details>
+</body>
